@@ -1,0 +1,178 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img, input { margin: 0; padding: 0; }
+
+fieldset, img, input, button { border: 0 none; padding: 0; margin: 0; outline-style: none; }
+
+/*去掉input等聚焦时的蓝色边框*/
+ul, ol { list-style: none; }
+
+/*input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}*/
+select, input { vertical-align: middle; }
+
+/*select, input, textarea { font-size:12px; margin:0; }*/
+textarea { resize: none; }
+
+/*防止拖动*/
+img { display: block; border: 0; vertical-align: middle; }
+
+/*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
+table { border-collapse: collapse; }
+
+a { text-decoration: none; }
+
+* { box-sizing: border-box; }
+
+/*添加公共样式*/
+/*body { font:12px/150% Arial,Verdana,"\5b8b\4f53"; color:#666; background:#fff }*/
+/*清除浮动*/
+/*******兼容ie8及以下去掉了一个冒号******/
+.clearfix:after { content: ""; display: block; height: 0; clear: both; overflow: hidden; visibility: hidden; zoom: 1; }
+
+/*a {color:#666; text-decoration:none; }
+a:hover{color:#C81623;}*/
+h1, h2, h3, h4, h5, h6 { text-decoration: none; font-weight: normal; font-size: 1em; }
+
+/*设置h标签的大小，设置跟父亲一样大的字体font-size:100%;*/
+s, i, em { font-style: normal; text-decoration: none; }
+
+/*公共类*/
+.container { /*版心 提取 */ width: 1200px; margin: 0 auto; }
+
+.fl { float: left; }
+
+.fr { float: right; }
+
+.al { text-align: left; }
+
+.ac { text-align: center; }
+
+.ar { text-align: right; }
+
+.hide { display: none; }
+
+.font12 { font-size: 12px; }
+
+.font14 { font-size: 14px; }
+
+.font16 { font-size: 16px; }
+
+/*公共部分*/
+/************************************/
+.mogujie { min-width: 1200px; }
+
+.mogujie .mgjheader .mgjheader_top { border-bottom: 1px solid #ccc; background: #f2f2f2; }
+
+.mogujie .mgjheader .mgjheader_top .headerTop { line-height: 32px; text-align: center; font-size: 12px; }
+
+.mogujie .mgjheader .mgjheader_top .headerTop img { display: inline-block; width: 12px; height: 12px; margin-right: 5px; }
+
+.mogujie .mgjheader .mgjheader_top .headerTop h3 { float: left; width: 200px; }
+
+.mogujie .mgjheader .mgjheader_top .headerTop ul { float: right; }
+
+.mogujie .mgjheader .mgjheader_top .headerTop ul li { float: left; }
+
+.mogujie .mgjheader .mgjheader_top .headerTop ul li a { display: inline-block; width: 90px; line-height: 16px; margin-left: 5px; border-right: 1px solid #ddd; color: #333; }
+
+.mogujie .mgjheader .headerMid h1 { width: 240px; height: 90px; background: url("../images/logo.png") no-repeat left center; background-size: cover; }
+
+.mogujie .mgjheader .headerMid .mid_search { height: 90px; margin: 20px 0 0 120px; }
+
+.mogujie .mgjheader .headerMid .mid_search .selectbox { width: 480px; height: 34px; border-radius: 0 6px 6px 0; border: 1px solid #f07; background: #fff; font-size: 12px; }
+
+.mogujie .mgjheader .headerMid .mid_search .selectbox .sousuo { position: relative; float: left; width: 60px; line-height: 34px; z-index: 10; text-align: center; color: #f57; }
+
+.mogujie .mgjheader .headerMid .mid_search .selectbox .sousuo img { position: absolute; top: 5px; right: -4px; }
+
+.mogujie .mgjheader .headerMid .mid_search .selectbox .sousuo ul { display: none; position: absolute; top: 32px; border: 1px solid #ccc; border-top: 1px solid transparent; }
+
+.mogujie .mgjheader .headerMid .mid_search .selectbox .sousuo ul li a { display: block; width: 60px; line-height: 30px; text-align: center; color: #f57; }
+
+.mogujie .mgjheader .headerMid .mid_search .selectbox .sousuo ul li:hover a { background: #ffeef4; }
+
+.mogujie .mgjheader .headerMid .mid_search .selectbox .sousuo:hover ul { display: block; }
+
+.mogujie .mgjheader .headerMid .mid_search .selectbox .searchform .searchtxt { width: 315px; line-height: 32px; padding-left: 10px; }
+
+.mogujie .mgjheader .headerMid .mid_search .selectbox .searchform .submitbtn { height: 32px; line-height: 32px; overflow: hidden; width: 103px; background-color: #f07; background-image: linear-gradient(to right, #f25, #ff1581); border: none; cursor: pointer; font-size: 16px; color: #fff; border-radius: 0 5px 5px 0; }
+
+.mogujie .mgjheader .headerMid .mid_search .hotword { padding-top: 10px; }
+
+.mogujie .mgjheader .headerMid .mid_search .hotword ul li { float: left; }
+
+.mogujie .mgjheader .headerMid .mid_search .hotword ul li a { display: inline-block; line-height: 20px; margin-right: 12px; font-size: 12px; color: #333; }
+
+.mogujie .mgjheader .headerMid .mid_search .hotword ul li:hover a { color: #f57; text-decoration: underline; }
+
+.mogujie .mgjheader .headerMid .mid_right img { width: 220px; height: 90px; }
+
+.mogujie .mgjnav { border-bottom: 2px solid #f07; }
+
+.mogujie .mgjnav .nav_l { position: relative; width: 257px; height: 40px; background: url("../images/zhuti.png") no-repeat; }
+
+.mogujie .mgjnav .nav_l h2 { position: absolute; left: 47px; line-height: 40px; font-size: 18px; color: #fff; }
+
+.mogujie .mgjnav .nav_r a { float: left; display: block; height: 20px; width: 140px; margin-top: 10px; border-right: 1px solid #ddd; text-align: center; line-height: 20px; font-size: 18px; color: #333; }
+
+.mogujie .mgjnav .nav_r a:hover { color: #f07; }
+
+.mogujie .mgjbanner { position: relative; }
+
+.mogujie .mgjbanner .banner_nav { position: relative; width: 256px; height: 440px; background-color: pink; z-index: 100; }
+
+.mogujie .mgjbanner .focus { position: absolute; left: 258px; width: 770px; height: 360px; overflow: hidden; }
+
+.mogujie .mgjbanner .focus ul { position: absolute; overflow: hidden; }
+
+.mogujie .mgjbanner .focus ul li { float: left; }
+
+.mogujie .mgjbanner .focus ul li img { display: block; height: 440px; }
+
+.mogujie .mgjbanner .focus .page { position: absolute; right: 0; bottom: 0; padding: 10px; }
+
+.mogujie .mgjbanner .focus .page span { display: inline-block; margin: 0 5px; width: 30px; height: 30px; line-height: 30px; background-color: rgba(0, 0, 0, 0.6); text-align: center; color: #fff; border-radius: 50%; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+
+.mogujie .mgjbanner .focus .page span.active { background-color: rgba(255, 0, 0, 0.8); }
+
+.mogujie .mgjfooter { margin-top: 0; padding: 50px 0 60px 0; background: whitesmoke; font-size: 12px; }
+
+.mogujie .mgjfooter .f_helper { height: 100px; border-bottom: 2px solid #FF5777; }
+
+.mogujie .mgjfooter .f_helper ul { float: left; }
+
+.mogujie .mgjfooter .f_helper ul li { width: 300px; text-align: center; }
+
+.mogujie .mgjfooter .f_helper ul li h4 { line-height: 28px; text-align: center; }
+
+.mogujie .mgjfooter .f_helper ul li span { display: inline-block; line-height: 28px; margin: 0 20px; }
+
+.mogujie .mgjfooter .f_helper ul .download span { padding: 0 5px; }
+
+.mogujie .mgjfooter .fotherlink { border-bottom: 1px solid #ddd; line-height: 27px; margin-bottom: 10px; margin-left: 0; }
+
+.mogujie .mgjfooter .fotherlink p { margin: 5px 0; }
+
+.mogujie .mgjfooter .fotherlink p a { display: inline-block; color: #666; }
+
+.mogujie .mgjfooter .fotherlink p a .mli { padding-left: 0; }
+
+.mogujie .mgjfooter .fotherlink p a span { display: inline-block; line-height: 12px; padding: 0 10px; border-right: 1px solid #ddd; }
+
+.mogujie .mgjfooter .fotherlink p a:hover { color: #f57; }
+
+.mogujie .mgjfooter .finfo p { font-size: 12px; }
+
+.mogujie .mgjfooter .finfo p a { display: inline-block; width: 80px; height: 30px; line-height: 30px; color: #666; }
+
+.mogujie .mgjfooter .finfo p a:hover { color: #f57; }
+
+.mogujie .mgjfooter .finfo p span { color: #ccc; }
+
+.mogujie .mgjfooter .fcopyright p { line-height: 30px; color: #999; }
+
+.mogujie .mgjfooter .fcopyright p a { display: inline-block; color: #999; }
+
+.mogujie .mgjfooter .fcopyright p span { margin: 0 5px; }
+
+.mogujie .mgjfooter .fcopyright p .zhizhao { margin-left: 0; }

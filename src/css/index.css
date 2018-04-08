@@ -1,0 +1,23 @@
+.mgj_rightbar { position: fixed; top: 0; right: 0; width: 30px; height: 100%; background: #202020; font-size: 12px; color: #fff; z-index: 10000; }
+
+.mgj_rightbar .mgj_r_blank { right: 0; height: 30px; width: 30px; }
+
+.mgj_rightbar .sidebar { padding: 5px 5px 0 5px; }
+
+.mgj_rightbar .sidebar a { display: block; line-height: 15px; text-align: center; color: #fff; }
+
+.mgj_rightbar .sidebar a img { display: block; width: 20px; height: 20px; margin: auto; color: #fff; }
+
+.mgj_rightbar .sidebar a .s-txt { padding: 8px 0 12px 0; }
+
+.mgj_rightbar .sidebar a span { display: block; border: 1px solid rgba(221, 221, 221, 0.6); }
+
+.mgj_rightbar .backtop { position: absolute; bottom: 0; }
+
+.mgj_rightbar .backtop span { display: block; margin: 3px; border: 1px solid rgba(221, 221, 221, 0.6); }
+
+.mgj_rightbar .backtop img { display: block; width: 30px; height: 30px; margin: auto; }
+
+.mgj_rightbar .sidebar:hover, .mgj_rightbar .backtop:hover { background-color: #EF2F23; }
+
+.mgj_rightbar .sidebar:hover span, .mgj_rightbar .backtop:hover span { border-color: #EF2F23; }
