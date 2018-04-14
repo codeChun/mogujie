@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 { text-decoration: none; font-weight: normal; font-size: 
 s, i, em { font-style: normal; text-decoration: none; }
 
 /*公共类*/
-.container { /*版心 提取 */ width: 1200px; margin: 0 auto; }
+.container { /*版心 提取 */ width: 1190px; margin: 0 auto; }
 
 .fl { float: left; }
 
@@ -60,14 +60,74 @@ s, i, em { font-style: normal; text-decoration: none; }
 /*公共部分*/
 /************************************/
 .mogujie { 
-    min-width: 1200px;
+    min-width: 1190px;
+    .mgj_rightbar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 30px;
+        height: 100%;
+        background: #202020;
+        font-size: 12px;
+        color: #fff;
+        z-index: 10000;
+        .mgj_r_blank {
+            right: 0;
+            height: 30px;
+            width: 30px;
+        }
+        .sidebar {
+            padding: 5px 5px 0 5px;
+            a {
+                display: block;
+                line-height: 15px;
+                text-align: center;
+                color: #fff;
+                img {
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    margin: auto;
+                    color: #fff;
+                }
+                .s-txt {
+                    padding: 8px 0 12px 0;
+                }
+                span {
+                    display: block;
+                    border: 1px solid rgba(221,221,221,.6);
+                }
+            }
+        }
+        .toTop {
+            display: none;
+            position: absolute;
+            bottom: 10px;
+            span {
+                display: block;
+                margin: 3px;
+                border: 1px solid rgba(221,221,221,.6);
+            }
+            img {
+                display: block;
+                width: 30px;
+                height: 30px;
+                margin: auto;
+            }
+        }
+        .sidebar:hover, .toTop:hover {
+            background-color: #EF2F23;
+            span {
+                border-color: #EF2F23;
+            }
+        }
+    }
     .mgjheader {
         .mgjheader_top {
             border-bottom: 1px solid #ccc;
             background: #f2f2f2;
             .headerTop{
                 line-height: 32px;
-                
                 text-align: center;
                 font-size: 12px;
                 img {
@@ -79,6 +139,7 @@ s, i, em { font-style: normal; text-decoration: none; }
                 h3 {
                     float: left;
                     width: 200px;
+                    text-align: left;
                 }
                 ul {
                     float: right;
@@ -93,6 +154,70 @@ s, i, em { font-style: normal; text-decoration: none; }
                             color: #333;
                         }
                     }
+                    .gouwuche {
+                        position: relative;
+                        ul {
+                            display: none;
+                            position: absolute;
+                            right: 0;
+                            top: 31px;
+                            left: -90px;
+                            background: #eee;
+                            border-radius: 0 0 5px 5px;
+                            border: 1px solid #ddd;
+                            border-top: none;
+                            z-index: 1;
+                            li {
+                                a {
+                                    display: block;
+                                    width: 183px;
+                                    line-height: 18px;
+                                    padding: 18px 0;
+                                    text-align: center;
+                                    color: #999;
+                                    border-right: none;
+                                    margin: 0;
+                                }
+                                &:hover a {
+                                    background: #e4e4e4;
+                                }
+                            }  
+                        }
+                        &:hover ul {
+                            display: block;
+                        }
+                    }
+                    .fuwu {
+                        position: relative;
+                        ul {
+                            display: none;
+                            position: absolute;
+                            z-index: 999;
+                            width: 90px;
+                            top: 100%;
+                            left: 0;
+                            background: #eee;
+                            border: 1px solid #ddd;
+                            border-top: none;
+                            border-radius: 0 0 3px 3px;
+                            li {
+                                a {
+                                    display: block;
+                                    height: 28px;
+                                    line-height: 28px;
+                                    padding: 0 20px;
+                                    margin: 0;
+                                    color: #444;
+                                }
+                                &:hover a {
+                                    background: #e4e4e4;
+                                }
+                            }
+                        }
+                        &:hover ul {
+                            display: block;
+                        }
+                    }
                 }
             }
         }
@@ -100,7 +225,7 @@ s, i, em { font-style: normal; text-decoration: none; }
             h1 {
                 width: 240px;
                 height: 90px;
-                background: url("../images/logo.png") no-repeat left center;
+                background: url("../img/logo.png") no-repeat left center;
                 background-size: cover;
             }
             .mid_search {
@@ -133,6 +258,7 @@ s, i, em { font-style: normal; text-decoration: none; }
                             border: 1px solid #ccc;
                             border-top: 1px solid transparent;
                             li {
+                                background: #fff;
                                 a {
                                     display: block;
                                     width: 60px;
@@ -150,10 +276,31 @@ s, i, em { font-style: normal; text-decoration: none; }
                         }
                     }
                     .searchform {
+                        position: relative;
                         .searchtxt {
                             width: 315px;
                             line-height: 32px;
                             padding-left: 10px;
+                        }
+                        .res {
+                            display: none;
+                            position: absolute;
+                            top: 33px;
+                            left: 0;
+                            width: 315px;
+                            height: 240px;
+                            border: 1px solid #f57;
+                            border-top: none;
+                            background: #fff;
+                            z-index: 20;
+                            color: #333;
+                            ul {
+                                li {
+                                    width: 100%;
+                                    height: 24px;
+                                    line-height: 24px;
+                                }
+                            }
                         }
                         .submitbtn {
                             height: 32px;
@@ -198,89 +345,6 @@ s, i, em { font-style: normal; text-decoration: none; }
             }
         }  
     } 
-    .mgjnav {
-        border-bottom: 2px solid #f07;
-        .nav_l {
-            position: relative;
-            width: 257px;
-            height: 40px;
-            background: url("../images/zhuti.png") no-repeat;
-            h2 {
-                position: absolute;
-                left: 47px;
-                line-height: 40px;
-                font-size: 18px;
-                color: #fff;
-            }
-        }
-        .nav_r {
-            a {
-                float: left;
-                display: block;
-                height: 20px;
-                width: 140px;
-                margin-top: 10px;
-                border-right: 1px solid #ddd;
-                text-align: center;
-                line-height: 20px;
-                font-size: 18px;
-                color: #333;
-                &:hover {
-                    color: #f07;
-                }
-            }
-        }
-    }
-    .mgjbanner {
-        // background: #79b7ff;
-        position:relative;
-        .banner_nav {
-            position: relative;
-            width: 256px;
-            height: 440px;
-            // background-color: rgba(255, 255, 255, 0.8);
-            background-color: pink;
-            z-index: 100;
-
-        }
-        .focus {
-            position: absolute;
-            left: 258px;
-            width:770px;
-            height:360px;
-            overflow:hidden;
-            ul {
-                position:absolute;
-                overflow:hidden;
-                li { 
-                    float:left;
-                    img {
-                        display: block;
-                        height: 440px;
-                    }
-                }
-            }
-            .page {
-                position:absolute;
-                right:0;
-                bottom:0;
-                padding:10px;
-                span { 
-                    display:inline-block;
-                    margin:0 5px;
-                    width:30px;
-                    height:30px;
-                    line-height:30px;
-                    background-color:rgba(0,0,0,.6);
-                    text-align:center;
-                    color:#fff;
-                    border-radius: 50%;
-                    box-shadow:0 0 10px rgba(0,0,0,.5);
-                }
-                span.active{background-color: rgba(255,0,0,.8)}
-            }
-        }
-    }
     .mgjfooter {
         margin-top: 0;
         padding: 50px 0 60px 0;
@@ -290,26 +354,62 @@ s, i, em { font-style: normal; text-decoration: none; }
             height: 100px;
             border-bottom: 2px solid #FF5777;
             ul{
-                // background: skyblue;
-                float: left; 
                 li { 
-                    width: 300px;
-                    text-align:  center;  
-                    h4 {
-                        line-height: 28px;
-                        text-align:  center;  
+                    float: left;
+                    width: 25%;
+                    // background: skyblue;
+                    padding-left: 20px;
+                    dl {
+                        dt {
+                            h4 {
+                                line-height: 28px;
+                                padding-left: 25px;
+                                font-weight: bold;
+                            }
                         }
-                    span {
-                        display: inline-block;
-                        line-height: 28px;
-                        margin: 0 20px;
-                    }
+                        dd {
+                            span {
+                                display: inline-block; 
+                                width: 80px;
+                                line-height: 20px;
+                                margin: 0 5px;
+                                color: #999;
+                            }
+                        }
+                        .dd_first {
+                            a {
+                                color: #999;
+                                span {
+                                    display: inline-block; 
+                                width: 80px;
+                                line-height: 20px;
+                                margin: 0 5px;
+                                    &:hover {
+                                    color: #f57;
+                                    }
+                                }
+                            }
+                        }
+                        .dd_four {
+                            span {
+                                position: relative;
+                                width: 60px;
+                                margin: 0;
+                                img {
+                                    position: absolute;
+                                    top: 30px;
+                                    left: -10px;
+                                    display: none;
+                                }
+                                &:hover {
+                                    img {
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }  
                 }
-                .download {
-                    span {
-                        padding: 0 5px;
-                    }
-                }  
             }
         }
         .fotherlink {

@@ -1,0 +1,55 @@
+#header_top { background-color: #EBEBEB; border-bottom: 1px solid #ccc; }
+
+#header_top li { float: left; height: 28px; line-height: 28px; padding-right: 8px; }
+
+#header_top .ht_left li:nth-child(2) a, #header_top .ht_left li:nth-child(4) a { color: #0066FF; }
+
+#header_top .ht_right li:nth-child(2) { padding: 0 15px; }
+
+.header_main { background-color: #fff; }
+
+.car_main { padding-top: 100px; width: 100%; background-color: #fff; }
+
+.car_main .car_table { border: 1px solid #ccc; }
+
+.car_main .car_table .checkbox { text-align: center; }
+
+.car_main .car_table td { width: 62px; border: 1px solid #ccc; }
+
+.car_main .car_table .colnum { height: 36px; line-height: 36px; width: 1200px; }
+
+.car_main .car_table .colnum span { display: inline-block; text-align: center; }
+
+.car_main .car_table .colnum span:first-child { width: 180px; }
+
+.car_main .car_table .colnum span:nth-child(2) { width: 280px; }
+
+.car_main .car_table .colnum span:nth-child(3), .car_main .car_table .colnum span:nth-child(4), .car_main .car_table .colnum span:nth-child(5), .car_main .car_table .colnum span:nth-child(6) { width: 135px; }
+
+.car_main .car_table .colcontent span { display: inline-block; text-align: center; }
+
+.car_main .car_table .colcontent img { width: 130px; height: 100px; max-width: 300px; }
+
+.car_main .car_table .colcontent #propic { width: 180px; }
+
+.car_main .car_table .colcontent #proname { width: 280px; overflow: hidden; }
+
+.car_main .car_table .colcontent #proqty, .car_main .car_table .colcontent #prosale, .car_main .car_table .colcontent #prototal, .car_main .car_table .colcontent #act { width: 135px; }
+
+.car_main .car_table .colcontent b, .car_main .car_table .colcontent strong { cursor: pointer; }
+
+.car_main .car_table .colcontent b:hover, .car_main .car_table .colcontent strong:hover { color: #f00; }
+
+.car_main .total_box { margin-top: 20px; }
+
+.car_main .total_box .clearcar { font-size: 16px; cursor: pointer; }
+
+.car_main .total_box .clearcar:hover { color: #f00; }
+
+.car_main .total_box .total_mon { color: #000; height: 40px; font-size: 25px; }
+
+.car_main .total_box .topay { margin: 30px; padding-left: 650px; }
+
+.car_main .total_box .topay #shopmore { margin-right: 20px; cursor: pointer; width: 110px; height: 36px; line-height: 36px; font-size: 16px; border: 1px solid #bbc; display: inline-block; text-align: center; background-color: #ccc; border-radius: 5px; }
+
+.car_main .total_box .topay #pay { width: 230px; height: 46px; line-height: 46px; color: #fff; font-size: 16px; border: 1px solid #bbc; cursor: pointer; display: inline-block; text-align: center; background-color: #f57; border-radius: 5px; }

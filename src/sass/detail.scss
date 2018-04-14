@@ -1,0 +1,118 @@
+
+// @import 'var';
+.detail_main {
+    .pro_blog_top {
+        height: 42px;
+        border-bottom: 1px solid #ccc;
+        .blog_top_l {
+            width: 200px;
+            line-height: 42px;
+            background: #ff0;
+        }
+    }
+    .pro_mes_main {
+        position:relative;
+        padding-top: 15px;
+        margin-bottom: 50px;
+        .jason-zoom-big {
+            position:absolute;
+            left:300px;
+            top:0;
+        }
+        .pro_mes_main_l{
+            img {
+                padding: 5px;
+                border:1px solid #f57;
+            }
+        }
+        .imglist{
+            position:absolute;
+            top:350px;
+            // margin-top: 30px;
+            li {
+                float: left;
+                margin:0 5px;
+                border:1px solid #ccc;
+                img {
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+            .li_active{
+                border:1px solid red;
+            }
+        }
+        .pro_mes_main_r {
+            padding-left:320px;
+            h2 {
+                font-size: 20px;
+                font-weight: bold;
+                height: 60px;
+                line-height: 60px;
+                border-bottom:1px dashed #ccc;
+            }
+            div {
+                border-bottom:1px dashed #ccc;
+                p {
+                    padding: 10px 0;
+                }
+            }
+            #price {
+                font-size: 14px;
+                margin:20px 0;
+            }
+            #sale {
+                margin:20px 0;
+                font-size: 30px;
+                color: #C7012C;
+                b {
+                    font-size: 16px;
+                    text-align:center;
+                    display:inline-block;
+                    height: 30px;
+                    line-height: 30px;
+                    background-color: #C7012C;
+                    color:#fff;
+                }
+            }
+            .buybox {
+                margin-top: 10px;
+                height: 120px;
+                border: 1px solid #ccc;
+                background-color:#eee;
+                #jian,#add{
+                    width: 22px;
+                    height: 22px;
+                    border:1px solid #ccc;
+                }
+                #pro_qty {
+                    text-align:center;
+                    display:inline-block;
+                    width: 80px;
+                    height: 22px;
+                    padding: 0;
+                    border: 1px solid #ccc;
+                }
+                #buy,#addTocar{
+                    margin: 10px 10px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    display:inline-block;
+                    text-align: center;
+                    height: 50px;
+                    line-height: 50px;
+                    width: 150px;
+                    font-size: 25px;
+                    color:#fff;
+                }
+                #buy {
+                    background-color:#C91D1D;
+                } 
+                #addTocar {
+                    background-color:#F97700;
+                }
+            }
+        }
+    }
+
+}

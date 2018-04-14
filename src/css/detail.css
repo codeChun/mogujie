@@ -1,0 +1,43 @@
+.detail_main .pro_blog_top { height: 42px; border-bottom: 1px solid #ccc; }
+
+.detail_main .pro_blog_top .blog_top_l { width: 200px; line-height: 42px; background: #ff0; }
+
+.detail_main .pro_mes_main { position: relative; padding-top: 15px; margin-bottom: 50px; }
+
+.detail_main .pro_mes_main .jason-zoom-big { position: absolute; left: 300px; top: 0; }
+
+.detail_main .pro_mes_main .pro_mes_main_l img { padding: 5px; border: 1px solid #f57; }
+
+.detail_main .pro_mes_main .imglist { position: absolute; top: 350px; }
+
+.detail_main .pro_mes_main .imglist li { float: left; margin: 0 5px; border: 1px solid #ccc; }
+
+.detail_main .pro_mes_main .imglist li img { height: 50px; width: 50px; }
+
+.detail_main .pro_mes_main .imglist .li_active { border: 1px solid red; }
+
+.detail_main .pro_mes_main .pro_mes_main_r { padding-left: 320px; }
+
+.detail_main .pro_mes_main .pro_mes_main_r h2 { font-size: 20px; font-weight: bold; height: 60px; line-height: 60px; border-bottom: 1px dashed #ccc; }
+
+.detail_main .pro_mes_main .pro_mes_main_r div { border-bottom: 1px dashed #ccc; }
+
+.detail_main .pro_mes_main .pro_mes_main_r div p { padding: 10px 0; }
+
+.detail_main .pro_mes_main .pro_mes_main_r #price { font-size: 14px; margin: 20px 0; }
+
+.detail_main .pro_mes_main .pro_mes_main_r #sale { margin: 20px 0; font-size: 30px; color: #C7012C; }
+
+.detail_main .pro_mes_main .pro_mes_main_r #sale b { font-size: 16px; text-align: center; display: inline-block; height: 30px; line-height: 30px; background-color: #C7012C; color: #fff; }
+
+.detail_main .pro_mes_main .pro_mes_main_r .buybox { margin-top: 10px; height: 120px; border: 1px solid #ccc; background-color: #eee; }
+
+.detail_main .pro_mes_main .pro_mes_main_r .buybox #jian, .detail_main .pro_mes_main .pro_mes_main_r .buybox #add { width: 22px; height: 22px; border: 1px solid #ccc; }
+
+.detail_main .pro_mes_main .pro_mes_main_r .buybox #pro_qty { text-align: center; display: inline-block; width: 80px; height: 22px; padding: 0; border: 1px solid #ccc; }
+
+.detail_main .pro_mes_main .pro_mes_main_r .buybox #buy, .detail_main .pro_mes_main .pro_mes_main_r .buybox #addTocar { margin: 10px 10px; cursor: pointer; border-radius: 5px; display: inline-block; text-align: center; height: 50px; line-height: 50px; width: 150px; font-size: 25px; color: #fff; }
+
+.detail_main .pro_mes_main .pro_mes_main_r .buybox #buy { background-color: #C91D1D; }
+
+.detail_main .pro_mes_main .pro_mes_main_r .buybox #addTocar { background-color: #F97700; }

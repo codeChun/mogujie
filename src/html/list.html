@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>欢迎来到蘑菇街列表页</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/list.css" />
+    <script src="../js/require.js" data-main="../js/list"></script>
+</head>
+<body>
+    <div class="mogujie">
+        <div id="rightbar"></div>
+        <header id="listheader"></header>
+        <main class="listmain">
+            <div class="container">
+                <div class="selectbox">
+                    <button id="lowTohigh">价格从低到高</button>
+                    <button id="highTolow">价格从高到低</button>
+                    <label for="low">最低价</label><input type="text" id="low"/>
+                    <label for="high">最高价</label><input type="text" id="high"/>
+                    <button id="priceCheck">查询</button>  
+                    <div id="page"></div>
+                </div>
+                <ul class="datalir clearfix"></ul>
+            </div>
+        </main>
+        <footer id="listfooter"></footer>
+    </div>
+    
+</body>
+</html>

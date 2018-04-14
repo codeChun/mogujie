@@ -1,0 +1,53 @@
+.logo { width: 100%; padding: 20px 0; position: relative; }
+
+.logo p { position: absolute; top: 30px; left: 220px; height: 28px; width: 861px; margin-left: 20px; background-color: #ffefef; border: 1px solid #ffc0cc; text-align: center; line-height: 28px; font-size: 11px; color: #666; }
+
+.loginbox { width: 100%; background-color: #F81E2C; background: url("../img/login/login_ad.png") no-repeat center center; }
+
+.loginbox .container { position: relative; height: 600px; }
+
+.loginbox .login_register { width: 300px; height: 420px; background-color: #ffefef; position: absolute; right: 10%; top: 7%; box-shadow: 5px 5px 12px 0px #a52e2e; }
+
+.loginbox .login_register h2 { height: 40px; line-height: 40px; border-bottom: 2px solid #f57; text-align: center; }
+
+.loginbox .login_register h2 span { padding: 0 10px; border-right: 1px solid #ccc; font-weight: bold; font-size: 18px; color: #f57; cursor: pointer; }
+
+.loginbox .login_register h2 span:last-child { border: 0; }
+
+.loginbox .login_register .base .lr_det { padding: 0 20px; }
+
+.loginbox .login_register .base .lr_det div { margin-top: 30px; border: 1px solid #ffc0cc; }
+
+.loginbox .login_register .base .lr_det div i { display: line-block; width: 30px; height: 35px; }
+
+.loginbox .login_register .base .lr_det div i img { display: inline-block; width: 30px; height: 25px; }
+
+.loginbox .login_register .base .lr_det div input { height: 35px; width: 200px; border-left: 1px solid #ffc0cc; padding-left: 5px; font-size: 14px; background: #ffefef; }
+
+.loginbox .login_register .base .lr_det div #vcode { width: 130px; }
+
+.loginbox .login_register .base .lr_det div #getCode { height: 35px; line-height: 35px; cursor: pointer; background-color: #F81E2C; color: #fff; }
+
+.loginbox .login_register .base .lr_det div span { display: inline-block; width: 50px; text-align: center; font-size: 16px; }
+
+.loginbox .login_register .base .lr_det .tips { display: none; position: absolute; top: 37px; left: 20px; width: 200px; height: 20px; background-color: skyblue; }
+
+.loginbox .login_register .base .fast_signin { margin: 10px 20px; width: 260px; height: 35px; font-size: 12px; color: #666; }
+
+.loginbox .login_register .base .base_lr { width: 260px; height: 35px; line-height: 35px; margin: 20px 20px; background-color: #fe5470; text-align: center; color: #fff; font-size: 16px; cursor: pointer; font-weight: bold; }
+
+.loginbox .login_register #lr_login { position: absolute; top: 40px; }
+
+.loginbox .login_register #lr_login .forget { padding-left: 115px; }
+
+.loginbox .login_register #lr_register { display: none; position: absolute; top: 40px; width: 300px; height: 360px; }
+
+.loginbox .login_register #lr_register input { height: 30px; }
+
+.loginbox .login_register #lr_register div { margin-top: 20px; }
+
+.loginbox .login_register #lr_register #register { position: relative; margin-top: 15px; }
+
+.loginbox .login_register #lr_register .get_flle { margin: 0 20px; width: 260px; height: 30px; line-height: 30px; }
+
+.loginbox .login_register #lr_register .tips { display: none; position: absolute; top: -20px; left: 50px; }

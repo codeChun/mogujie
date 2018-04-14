@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>欢迎来到蘑菇街登录界面</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/login.css" />
+    <script src="../js/require.js" data-main="../js/login"></script>
+</head>
+<body>
+    <div class="mogujie">
+        <div class="container">
+            <header class="logo">
+                <h1><a href="../index.html"><img src="../img/login/login.png"/></a></h1>
+                <p class="falv">依《网络安全法》相关要求，即日起蘑菇街会员登陆需绑定手机。为保障您的账户安全及正常使用，如您尚未绑定，请尽快完成绑定，感谢您的理解和支持!</p>
+            </header>
+        </div>
+         <!-- [登录界面 start]-->
+        <div class="loginbox">
+            <div class="container">
+                <div class="login_register">
+                    <h2><span class="denglu">登录</span></h2>
+                    <div class=" base" id="lr_login">
+                        <div class="lr_det">
+                            <div>
+                                <label for="account"><i><img src="../img/login/account.svg"/></i></label>
+                                <input type="text" id="account" placeholder="邮箱/用户名/已验证手机"/>
+                            </div>
+                            <div>
+                                <label for="password"><i><img src="../img/login/password.svg"/></i></label>
+                                <input type="password" id="password" placeholder="密码"/>
+                            </div>
+                        </div>
+                        <div class="fast_signin">
+                            <input type="checkbox" id="check"/><label for="check">下次自动登录</label><a href="" class="forget"><ins>忘记密码？</ins></a>
+                        </div>
+                        <div id="signin" class="base_lr">登录</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [登录界面 end] --> 
+        <footer></footer>
+    </div>
+</body>
+</html>

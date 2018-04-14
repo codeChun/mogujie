@@ -1,0 +1,102 @@
+// @import 'var';
+.register_main{
+    width: 100%;background-color:#FC7C8B;
+    .container{
+    background:url('../img/login/login_ad2.jpg') no-repeat;height: 600px;position:relative;
+        #registerbox{
+            width: 300px;
+            background-color: #ffefef;
+            position:absolute;
+            right:5%;
+            top:1%;
+            box-shadow:5px 5px 12px 0px #a52e2e;
+
+            h2 {
+                font-weight: bold;
+                font-size: 20px;
+                height: 30px;
+                line-height: 30px;
+                border-bottom:2px solid #f57;
+                text-align: center;
+                color: #f57;
+            }
+            input { 
+                height: 30px;
+                background: #ffefef;
+            }
+            div { 
+                margin-top: 20px;
+            }
+            #register {
+                position:relative;
+                // margin-top:15px;
+                margin: 20px 20px;
+                width: 260px;
+                height: 35px;
+                line-height: 35px;
+                background-color: #fe5470;
+                text-align: center;
+                color: #fff;
+                font-size: 16px;
+                cursor: pointer;
+                font-weight: bold;
+            }
+            .get_flle {
+                margin:0 20px;
+                width: 260px;
+                height: 30px;
+                line-height: 30px;
+                font-size: 14px;
+                a { color: #f57;}
+            }
+            .tips {
+                position: absolute;
+                top: 0px;
+                left: 50px;
+                background-color:skyblue;
+                display:none;
+            }
+            .lr_det{
+                padding:0 20px;
+                div {
+                    margin-top: 30px;
+                    border: 1px solid #ffc0cc;
+                    i {
+                        display: line-block;
+                        width: 30px;
+                        height: 35px;
+                        img {
+                            display: inline-block; 
+                            width: 30px;
+                            height: 25px;
+                        }
+                    }
+                    input {
+                        height: 35px;
+                        width: 200px;
+                        border-left: 1px solid #ffc0cc;
+                        padding-left: 5px;
+                        font-size: 14px;
+                    }
+                    #vcode {
+                        width: 130px;
+                    }
+                    #getCode {
+                        height: 35px;
+                        line-height: 35px;
+                        cursor:pointer;
+                        background-color:#fe5470;
+                        color:#fff;
+                    }
+                    span {
+                        display: inline-block;
+                        width: 50px;
+                        text-align: center;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+// footer{padding-top:10px;}

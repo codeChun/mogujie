@@ -1,0 +1,35 @@
+.register_main { width: 100%; background-color: #FC7C8B; }
+
+.register_main .container { background: url("../img/login/login_ad2.jpg") no-repeat; height: 600px; position: relative; }
+
+.register_main .container #registerbox { width: 300px; background-color: #ffefef; position: absolute; right: 5%; top: 1%; box-shadow: 5px 5px 12px 0px #a52e2e; }
+
+.register_main .container #registerbox h2 { font-weight: bold; font-size: 20px; height: 30px; line-height: 30px; border-bottom: 2px solid #f57; text-align: center; color: #f57; }
+
+.register_main .container #registerbox input { height: 30px; background: #ffefef; }
+
+.register_main .container #registerbox div { margin-top: 20px; }
+
+.register_main .container #registerbox #register { position: relative; margin: 20px 20px; width: 260px; height: 35px; line-height: 35px; background-color: #fe5470; text-align: center; color: #fff; font-size: 16px; cursor: pointer; font-weight: bold; }
+
+.register_main .container #registerbox .get_flle { margin: 0 20px; width: 260px; height: 30px; line-height: 30px; font-size: 14px; }
+
+.register_main .container #registerbox .get_flle a { color: #f57; }
+
+.register_main .container #registerbox .tips { position: absolute; top: 0px; left: 50px; background-color: skyblue; display: none; }
+
+.register_main .container #registerbox .lr_det { padding: 0 20px; }
+
+.register_main .container #registerbox .lr_det div { margin-top: 30px; border: 1px solid #ffc0cc; }
+
+.register_main .container #registerbox .lr_det div i { display: line-block; width: 30px; height: 35px; }
+
+.register_main .container #registerbox .lr_det div i img { display: inline-block; width: 30px; height: 25px; }
+
+.register_main .container #registerbox .lr_det div input { height: 35px; width: 200px; border-left: 1px solid #ffc0cc; padding-left: 5px; font-size: 14px; }
+
+.register_main .container #registerbox .lr_det div #vcode { width: 130px; }
+
+.register_main .container #registerbox .lr_det div #getCode { height: 35px; line-height: 35px; cursor: pointer; background-color: #fe5470; color: #fff; }
+
+.register_main .container #registerbox .lr_det div span { display: inline-block; width: 50px; text-align: center; font-size: 16px; }

@@ -1,0 +1,51 @@
+// @import 'var';
+ #header_top{
+    background-color: #EBEBEB;border-bottom:1px solid #ccc;
+    li{float:left; height: 28px;line-height: 28px;padding-right: 8px;}
+    .ht_left{
+        li:nth-child(2) a,li:nth-child(4) a{color:#0066FF;}
+        }
+    .ht_right li:nth-child(2){padding:0 15px;}
+    }
+ .header_main{
+    background-color:#fff;
+        // h1{width: 240px;height: 90px;background: url('../img/logo.png') no-repeat;}
+        // .carstep{display:block;height: 95px;width: 800px;background: url('../img/logo.png') no-repeat; }
+    }
+    .car_main{
+        padding-top: 100px;width: 100%;background-color:#fff;
+        .car_table{
+            border:1px solid #ccc;
+            .checkbox{text-align:center;}
+            td{width: 62px; border:1px solid #ccc;}
+
+            .colnum{height: 36px;line-height: 36px;width:1200px;
+                span{display:inline-block;text-align:center;}
+               span:first-child{width: 180px;}span:nth-child(2){width: 280px;}
+               span:nth-child(3), span:nth-child(4), span:nth-child(5), span:nth-child(6){width: 135px;}
+            }
+            .colcontent{
+                span{display:inline-block;text-align:center;}
+                img{width: 130px;height: 100px;max-width:300px;}
+                #propic{width: 180px;}#proname{width: 280px;overflow:hidden;}
+                #proqty,#prosale,#prototal,#act{width: 135px;}
+                b,strong{cursor:pointer;}b:hover,strong:hover{color:#f00;}
+            }
+        }
+        .total_box{
+            margin-top: 20px;
+            .clearcar{font-size: 16px;cursor:pointer;}.clearcar:hover{color:#f00;}
+            .total_mon{color:#000;height: 40px;font-size: 25px;}
+            .topay{
+                margin: 30px;padding-left: 650px;
+                #shopmore{margin-right: 20px;cursor:pointer;
+                width: 110px;height: 36px;line-height: 36px;font-size: 16px;border:1px solid #bbc;
+                display:inline-block;text-align:center;background-color: #ccc;border-radius:5px;
+                }
+                #pay{width: 230px;height: 46px;line-height: 46px;color: #fff;font-size: 16px;border:1px solid #bbc;cursor: pointer;
+                display:inline-block;text-align:center;background-color:#f57;border-radius:5px;}
+            }
+        }
+     
+        
+    }
