@@ -7,8 +7,8 @@ require.config({
     }
  })
 require(['jquery','com_plus','base','config','ajax_plugin'],function($,common,base){
-    $(".car_rightbar").load("./rightbar.html");
     $(".car_header").load("./header.html");
+    $(".car_rightbar").load("./rightbar.html");
     $(".car_footer").load("./footer.html");   
     // 购物车cookie去重
     var chun_list = [];
@@ -87,18 +87,18 @@ require(['jquery','com_plus','base','config','ajax_plugin'],function($,common,ba
         switch(e.target.id){
             case 'del':
             // 从页面上移除所有单挑商品
-            var targetTr=e.target.parentNode.parentNode.parentNode.parentNode;
-            $('.car_table').get(0).removeChild(targetTr);
-            // 移除商品列表对应数组的商品对象并更新cookie
-            $.each($(cookie_arr),function(idx,item){
-                if(item.id==e.target.parentNode.parentNode.id){
-                    $('.car_table').html('');
-                    cookie_arr.splice(idx,1);
-                    createCarlist(cookie_arr);
-                    uploadCookie(cookie_arr);
-                }
-            })
-            break;
+                var targetTr=e.target.parentNode.parentNode.parentNode.parentNode;
+                $('.car_table').get(0).removeChild(targetTr);
+                // 移除商品列表对应数组的商品对象并更新cookie
+                $.each($(cookie_arr),function(idx,item){
+                    if(item.id==e.target.parentNode.parentNode.id){
+                        $('.car_table').html('');
+                        cookie_arr.splice(idx,1);
+                        createCarlist(cookie_arr);
+                        uploadCookie(cookie_arr);
+                    }
+                })
+                break;
             case 'clearAll':
                 cookie_arr=[];
                 $('.car_table').html('');
@@ -106,11 +106,11 @@ require(['jquery','com_plus','base','config','ajax_plugin'],function($,common,ba
                 uploadCookie(cookie_arr);
                 break;
             case 'shopmore':
-            location.href='list.html';
+                location.href='list.html';
         }
     })
      // 全选购物记录
     $('#all').on('click',function(){
-          $('.car_table tr').find(':checkbox').prop('checked',this.checked);
+        $('.car_table tr').find(':checkbox').prop('checked',this.checked);
     })     
 })

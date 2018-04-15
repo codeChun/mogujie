@@ -24,13 +24,13 @@ require.config({
  })
 
 require(['jquery','com_plus','base','ajax_plugin','slider','dateFormat'],function($,common,base){
-    $("#mgjHeader").load("html/header.html");
-    $("#mgjFooter").load("html/footer.html");   
+    $("header").load("html/header.html");
+    $("footer").load("html/footer.html");   
     $("#rightbar").load("html/rightbar.html");
     $(".datalir").load("../html/list.html .datalir");
 
-        // 头部搜索框ajax请求
-        // base.searchAjax();
+    // 头部搜索框ajax请求
+    // base.searchAjax();
 
     $.ajax({
         url:'../api/list.php',
@@ -57,8 +57,6 @@ require(['jquery','com_plus','base','ajax_plugin','slider','dateFormat'],functio
         }
     });
 
-
-    
 
     // banner 轮播图
     let focus = document.querySelector('.focus');
@@ -209,19 +207,16 @@ require(['jquery','com_plus','base','ajax_plugin','slider','dateFormat'],functio
     }
     function detailHref(data){
         par += '?' + 'id' + '=' + data;
-        console.log(par);
         location.href='html/detail.html' + par;
     }
 
     // 延时500ms执行点击首页商品跳转到详情页
     // setTimeout(function(){
-       $('.datalir').on('click','li img',function(e){
-            var id = e.target.parentNode.getAttribute("data-id");
-            console.log(id);
-            detailAjax(id);
-            detailHref(id);
-            
-      })
+    $('.datalir').on('click','li img',function(e){
+        var id = e.target.parentNode.getAttribute("data-id");
+        detailAjax(id);
+        detailHref(id);   
+    })
     // },500)
     
 

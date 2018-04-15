@@ -17,28 +17,33 @@
         推导公式：array_slice($arr,($page_no-1)*$qty,$qty)
 
      */
+
     // 建立与数据库连接
     require('connect.php');
-    $cat = isset($_GET['category']) ? $_GET['category'] : null;
-    $page_no = isset($_GET['pageNo']) ? $_GET['pageNo'] : 1;
-    $qty = isset($_GET['qty']) ? $_GET['qty'] : 5;
+
+    $page = isset($_GET['page']) ? $_GET['page'] : 1;
+    $qty = isset($_GET['qty']) ? $_GET['qty'] : 10;
+
     // 查询sql语句
-    $sql = "select * from list_goods where category='$cat'";
-    // 得到查询结果集合（对象）
-    $res = $conn->query($sql);
+    $idx = ($page-1)*$qty;
+    $result = $conn->query("select * from list_goods");
 
     // 使用查询结果集
     // 得到一个数组
-    $row = $res->fetch_all(MYSQLI_ASSOC);
-    // var_dump($row);
+    $res = $result->fetch_all(MYSQLI_ASSOC);
+
+    $result->close();
+
     // 根据分页截取数据
-    $arr = array(
-        'data'=>array_slice($row, ($page_no-1)*$qty,$qty),
-        'total'=>count($row),
-        'qty'=>$qty,
-        'pageNo'=>$page_no*1
+    $conn->close();
+    $res2=array(
+        "len"=>count($res),
+        "content"=>array_slice($res,$qty*($page-1),$qty),
+        "page"=>$page*1,
+        "qty"=>$qty*1
     );
-    
     // 输出json字符串
-    echo json_encode($arr,JSON_UNESCAPED_UNICODE);
+    echo json_encode($res2,JSON_UNESCAPED_UNICODE);
+
+
 ?>

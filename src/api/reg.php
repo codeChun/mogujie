@@ -26,36 +26,4 @@
         echo "success";
     }
 
-
-    // $sql = "select * from user where username ='$username'";
-
-    // $result = $conn->query($sql);
-
-
-    // if($result->num_rows>0){
-    //     echo "fail";
-    // }else{
-    //     if($type === 'reg'){
-    //         // 加密密码
-    //         // md5()
-    //         $password = md5($password);
-
-    //         // 注册（保存到数据库）
-    //         $sql = "insert into user(username,password,phone,email) values('$username','$password','$phone','$email')";
-
-    //         // 执行sql语句
-    //         $res = $conn->query($sql);
-
-    //         if($res){
-    //             echo "success";
-    //         }else{
-    //             echo "fail";
-    //         }
-    //     }else{
-    //         // 验证用户名可注册
-    //         echo "success";
-    //     }
-    // }
-
-    // echo "nihao";
 ?>

@@ -10,7 +10,7 @@ require.config({
              exports:'jQuery.prototype.jasonZoom'
         },
     }
- })
+})
 require(['jquery','com_plus','base','config','zoom','ajax_plugin'],function($,common,base,config){       
         // 加载远程html文件，load取html结构
         $(".rightbar").load("./rightbar.html");
@@ -25,7 +25,6 @@ require(['jquery','com_plus','base','config','zoom','ajax_plugin'],function($,co
         var url = par.substring(1);
         url = url.split('=');
         par = url[1];
-        // console.log(par);
         // 接收来自页面的参数然后发起请求
         function getAndajax(url){
             $.ajax({
@@ -126,7 +125,7 @@ require(['jquery','com_plus','base','config','zoom','ajax_plugin'],function($,co
                                     console.log(res[res.length-1].qty); 
                                     var now = new Date();
                                     now.setDate(now.getDate()+7);
-                                    document.cookie = 'res='+JSON.stringify(res)+';expires='+now.toUTCString()+';path=/';
+                                    document.cookie = 'res=' + JSON.stringify(res) + ';expires=' + now.toUTCString() + ';path=/';
                                     break;
                                     // 去结算
                                 case 'buy':
@@ -146,7 +145,7 @@ require(['jquery','com_plus','base','config','zoom','ajax_plugin'],function($,co
                             positionSetY:0,
                             gap:0
                         });
-                            // 点击小图片实现图片切换并添加放大镜效果
+                        // 点击小图片实现图片切换并添加放大镜效果
                         $('.imglist').on('click','img',function(){
                             $('#proimg').attr({
                                 src:this.src,

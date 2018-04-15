@@ -18,19 +18,22 @@
         #page {
             width: 800px;
             height: 50px;
-            background: skyblue;
+            // background: skyblue;
+           span{
+                display: inline-block;
+                margin: 5px;
+                width: 40px;
+                line-height: 1.8;
+                text-align: center;
+                background-color: #dfdfdf;
+                color: #666;
+                cursor: pointer;
+            } 
+            span.active {
+                background-color:#fc0;
+                color: #fff;
+            }
         }
-        #page span{
-            display: inline-block;
-            margin: 5px;
-            width: 40px;
-            line-height: 1.8;
-            text-align: center;
-            background-color: #dfdfdf;
-            color: #666;
-            cursor: pointer;
-         }
-        #page span.active{background-color:#fc0;color:#fff;}
     }
     .datalir {
         li {
@@ -75,6 +78,7 @@
                         width: 16px;
                         height: 16px;
                     }  
+                    &:hover img { background: #ff0;}
                 }
             }
             .xiangsi {

@@ -5,7 +5,7 @@
 
 .listmain .selectbox input { height: 20px; border: 1px solid #f57; }
 
-.listmain .selectbox #page { width: 800px; height: 50px; background: skyblue; }
+.listmain .selectbox #page { width: 800px; height: 50px; }
 
 .listmain .selectbox #page span { display: inline-block; margin: 5px; width: 40px; line-height: 1.8; text-align: center; background-color: #dfdfdf; color: #666; cursor: pointer; }
 
@@ -26,6 +26,8 @@
 .listmain .datalir li .price .xingxing { color: #999; }
 
 .listmain .datalir li .price .xingxing img { display: inline-block; width: 16px; height: 16px; }
+
+.listmain .datalir li .price .xingxing:hover img { background: #ff0; }
 
 .listmain .datalir li .xiangsi { display: none; position: absolute; top: 330px; left: 0; width: 100%; line-height: 24px; text-align: center; background: rgba(255, 85, 119, 0.7); color: #fff; }
 

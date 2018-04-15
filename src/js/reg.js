@@ -25,7 +25,7 @@ require(['jquery','com_plus','ajax_plugin'],function($,common){
         switch(e.target.id){
             // 用户名非空验证
              case 'name':
-                 delempty('#name','用户名');
+                delempty('#name','用户名');
             // 用户名是否被占用验证
                 var name = $('#name').get(0).value;
                 $.ajax({
@@ -118,7 +118,8 @@ require(['jquery','com_plus','ajax_plugin'],function($,common){
         }
     }).on('click','#getCode',function(){
          // 获取验证码
-         $('#showCode').html(common.randomCode(4));
+        $('#showCode').html(common.randomCode(4));
+        
     }).on('click','#register',function(){
             // console.log($('#registerbox input').length-1);
         if(checkLength == $('#registerbox input').length-1 || checkLength>$('#registerbox input').length-1 && $('#checkfile').get(0).checked){
@@ -131,18 +132,18 @@ require(['jquery','com_plus','ajax_plugin'],function($,common){
                     data:{
                         'username':username,
                         'password':password,
-                        'email':phone,
-                        'phone':email
+                        'phone':phone,
+                        'email':email
                     },
                     success:function(res){
                         console.log(res);
                         if(res == 'success'){
                             $('#registerbox input').val('');
-                            alert('' + username + ',恭喜你成为蘑菇街会员!')
+                            alert('' + username + ',恭喜你成为蘑菇街会员!');
                             location.href = './login.html';
                         }
-                }
-            })
-        }
+                    }
+                })
+            }
     })
 })
