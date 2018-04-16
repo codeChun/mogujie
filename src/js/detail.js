@@ -88,9 +88,9 @@ require(['jquery','com_plus','base','config','zoom','ajax_plugin'],function($,co
                                 }
                             }); 
                             var num = $('#pro_qty').val();
-                              if(num <= 1){
+                            if(num <= 1){
                                     num = 1;
-                                }
+                            }
                             switch(e.target.id){
                                 case 'jian':
                                     num--;
