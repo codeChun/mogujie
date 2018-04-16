@@ -84,8 +84,7 @@ require(['jquery','com_plus','base','ajax_plugin'],function($,common,base){
                 
                 // 处理分页
                 let spanlen = Math.ceil(res.len/res.qty);
-                console.log(res)
-
+                // console.log(res)
                 page.html('');
                 for(let i=1;i<=spanlen;i++){
                     var span = $('<span/>');
